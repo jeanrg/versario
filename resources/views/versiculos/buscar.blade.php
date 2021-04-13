@@ -11,6 +11,7 @@
     <link href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css" rel="stylesheet">
     <link href="https://cdn.datatables.net/responsive/2.2.7/css/responsive.bootstrap4.min.css" rel="stylesheet">
     <link href="https://cdn.datatables.net/searchpanes/1.2.1/css/searchPanes.dataTables.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/searchpanes/1.2.1/css/searchPanes.bootstrap4.min.css" rel="stylesheet">
     <link href="https://cdn.datatables.net/buttons/1.7.0/css/buttons.bootstrap4.min.css" rel="stylesheet">
     <!-- datatables -->
     <!-- datatables extension SELECT -->
@@ -121,6 +122,7 @@
     <script src="https://cdn.datatables.net/buttons/1.7.0/js/dataTables.buttons.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/1.7.0/js/buttons.bootstrap4.min.js"></script>
     <script src="https://cdn.datatables.net/searchpanes/1.2.1/js/dataTables.searchPanes.min.js"></script>
+    <script src="https://cdn.datatables.net/searchpanes/1.2.1/js/searchPanes.bootstrap4.min.js"></script>
     <script src="{{ asset('plugins/sweetAlert2/sweetalert2.all.min.js')}}" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
@@ -155,7 +157,6 @@
             viewTotal: true,
             dtOpts:{
                         dom:'tp',
-                        paging:'true',
                         pagingType:'simple',
                         searching:true,
                     }
@@ -274,13 +275,14 @@
 
         });
 
-
         table.buttons().container()
         .appendTo( '#versiculos_wrapper .col-md-6:eq(0)' );
 
         $('#versiculos tbody').on( 'click', 'tr', function () {
         $(this).toggleClass('selected');
         } );
+
+
 
 });
 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Versiculo;
+use DataTables;
 
 
 class DatatableController extends Controller
@@ -13,7 +14,7 @@ class DatatableController extends Controller
         $versiculos = Versiculo::select('id','title','descripcion', 'start')->get();
 
 
-        // return datatables()->of($versiculos)->toJson();
+        // return DataTables::of($versiculos)->toJson();
 
     }
 }
