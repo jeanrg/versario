@@ -232,7 +232,7 @@
             "zeroRecords": "No se encontraron datos - sorry",
             "info": "Mostrando _END_ de _TOTAL_ registros",
             "infoEmpty": "No hay registros disponibles",
-            "infoFiltered": "(filtrado total de _MAX_ registros totales)",
+            "infoFiltered": "(filtro de _MAX_ registros totales)",
             "paginate": {
                 "first": "Primera pagina",
                 "previous": "Atras",
