@@ -230,7 +230,7 @@
                             </select>` +
                             " - registros por pagina",
             "zeroRecords": "No se encontraron datos - sorry",
-            "info": "Mostrando _START_ al _END_ de _TOTAL_ registros",
+            "info": "Mostrando _END_ de _TOTAL_ registros",
             "infoEmpty": "No hay registros disponibles",
             "infoFiltered": "(filtrado total de _MAX_ registros totales)",
             "paginate": {
