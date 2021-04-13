@@ -161,6 +161,7 @@
                         searching:true,
                     }
         },
+        deferRender: true,
 
         dom: "P<'row'<'col-sm-12 col-md-6'l><'col-sm-12 col-md-6'Bf>>" +
              "<'row'<'col-sm-12'rt>>" +
@@ -229,7 +230,7 @@
                             </select>` +
                             " - registros por pagina",
             "zeroRecords": "No se encontraron datos - sorry",
-            "info": "Página _PAGE_ de _PAGES_",
+            "info": "Mostrando _START_ al _END_ de _TOTAL_ registros",
             "infoEmpty": "No hay registros disponibles",
             "infoFiltered": "(filtrado total de _MAX_ registros)",
             "paginate": {
